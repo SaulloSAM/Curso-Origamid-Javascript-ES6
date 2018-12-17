@@ -8,7 +8,7 @@ function executar_ex04 () {
      */
 
     // Inicio do Exercício.
-    
+
     // Final do Exercício.
 }
 

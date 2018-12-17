@@ -5,6 +5,6 @@ function executar_ex03 () {
      */
 
     // Inicio do Exercício.
-    
+
     // Final do Exercício.
 }
