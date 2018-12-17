@@ -1,0 +1,21 @@
+var btnEx01 = document.getElementById("ex01");
+var btnEx02 = document.getElementById("ex02");
+var btnEx03 = document.getElementById("ex03");
+var btnEx04 = document.getElementById("ex04");
+var btnEx05 = document.getElementById("ex05");
+var btnEx06 = document.getElementById("ex06");
+var btnEx07 = document.getElementById("ex07");
+var btnEx08 = document.getElementById("ex08");
+var btnEx09 = document.getElementById("ex09");
+var btnEx10 = document.getElementById("ex10");
+
+btnEx01.addEventListener ("click", () => { executar_ex01 (); });
+btnEx02.addEventListener ("click", () => { executar_ex02 (); });
+btnEx03.addEventListener ("click", () => { executar_ex03 (); });
+btnEx04.addEventListener ("click", () => { executar_ex04 (); });
+btnEx05.addEventListener ("click", () => { executar_ex05 (); });
+btnEx06.addEventListener ("click", () => { executar_ex06 (); });
+btnEx07.addEventListener ("click", () => { executar_ex07 (); });
+btnEx08.addEventListener ("click", () => { executar_ex08 (); });
+btnEx09.addEventListener ("click", () => { executar_ex09 (); });
+btnEx10.addEventListener ("click", () => { executar_ex10 (); });
