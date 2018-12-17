@@ -1,8 +1,7 @@
 function executar_ex05 () {
 
     /**
-     * Escreva um programa que pede para o usuário digitar dois inteiros e imprime
-     * a soma desses inteiros.
+     * Escreva um programa que pede para o usuário digitar um inteiro e imprime o quadrado desse inteiro.
      */
 
     // Inicio do Exercício.

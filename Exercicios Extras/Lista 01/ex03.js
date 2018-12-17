@@ -1,8 +1,7 @@
 function executar_ex03 () {
 
     /**
-     * Escreva um programa que pede para o usuário digitar dois inteiros e imprime
-     * a soma desses inteiros.
+     * Escreva um programa que pede para o usuário digitar dois inteiros e imprime o produto desses inteiros.
      */
 
     // Inicio do Exercício.
