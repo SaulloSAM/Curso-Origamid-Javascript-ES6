@@ -136,10 +136,10 @@ false || true;          // true
  * 
  * Com o switch você pode verificar se uma variável é igual à diferentes valores
  * utilizando o 'case'. Caso ela seja igual, você pode fazer algumas coisas que utiliza a
- * palavra chave 'break' para cancelar a continuação. O valor de default ocorrerá caso
+ * palavra chave 'break' para cancelar a continuação. O valor de 'default' ocorrerá caso
  * nenhuma das anteriores seja verdadeira.
  */
-var corFavorita = "azul";
+var corFavorita = "Azul";
 
 switch (corFavorita) {
     case "Azul":
@@ -151,4 +151,60 @@ switch (corFavorita) {
     case "Amarelo":
         console.log(corFavorita);
         break;
+    default:
+        console.log("Não tem cor favorita");
+}
+
+/**
+ * Exercício
+ * 
+ */
+
+// Verifique se a sua idade é maior do que a de algum parente.
+// Dependendo do resultado coloque no console 'É maior', 'É igual' ou 'É menor'
+var minhaIdade = 24;
+var idadeIrmao = 22;
+if (minhaIdade > idadeIrmao) {
+    console.log("É maior");
+} else if (minhaIdade == idadeIrmao) {
+    console.log("É igual");
+} else {
+    console.log("É menor");
+}
+
+
+// Qual valor é retornado na seguinte expressão?
+var expressao = (5 - 2) && (5 - ' ') && (5 - 2);
+console.log(expressao) ; // 3;
+
+// Verifique se as seguintes variáveis são Truthy ou Falsy
+var nome = 'Andre'; // true
+var idade = 28; // true
+var possuiDoutorado = false; // false
+var empregoFuturo; // false
+var dinheiroNaConta = 0; // false
+console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta);
+
+// Compare o total de habitantes do Brasil com China (valor em milhões)
+var brasil = 207;
+var china = 1340;
+
+if (brasil > china) {
+    console.log('Brasil tem mais habitantes');
+} else {
+    console.log('Brasil tem menos habitantes');
+}
+
+// O que irá aparecer no console?
+if(('Gato' === 'gato') && (5 > 2)) {
+  console.log('Verdadeiro');
+} else {
+  console.log('Falso'); // falso
+}
+
+// O que irá aparecer no console?
+if(('Gato' === 'gato') || (5 > 2)) {
+  console.log('Gato' && 'Cão'); // cão
+} else {
+  console.log('Falso');
 }
