@@ -94,5 +94,5 @@ for (var i = 0; i < frutas.length; i++) {
 }
 
 // Coloque a última fruta do array acima em uma variável, sem remover a mesma do array; 
-var ultimaFruta = frutas[(frutas.length - 1)];
+var ultimaFruta = frutas[frutas.length - 1];
 console.log(`Ultima Fruta - ${ultimaFruta}`);
