@@ -23,6 +23,10 @@ ul {
     list-style: none;
 }
 
+html.textoMaior {
+    font-size: 150%;
+}
+
 .menu {
     grid-column: 3 / 5;
     margin-top: 2rem;
