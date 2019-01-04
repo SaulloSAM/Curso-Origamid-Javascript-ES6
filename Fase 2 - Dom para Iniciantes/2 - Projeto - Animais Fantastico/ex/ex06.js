@@ -58,7 +58,7 @@ const titulo = contato.querySelector('.titulo');
 contato.appendChild(lista); // move lista para o final de contato
 contato.insertBefore(lista, titulo); // insere a lista antes de titulo
 contato.removeChild(titulo); // remove titulo de contato
-contato.replaceChild(lista, titulo); // substitui titulo por lista
+// contato.replaceChild(lista, titulo); // substitui titulo por lista
 
 /**
  * [NOVOS-ELEMENTOS]
@@ -78,14 +78,13 @@ animais.appendChild(novoH1);
  * Todo elemento selecionado é único.
  * Para criarmos um novo elemento baseado no anterior, é necessário utilizar o método cloneNode()
  */
-const titulo = document.querySelector('h1');
 const titulo2 = document.querySelector('h1');
 const novoTitulo = titulo;
 // titulo, titulo2 e novoTitulo são iguais.
 
 const cloneTitulo = titulo.cloneNode(true);
-const contato = document.querySelector('.contato');
-contato.appendChild(cloneTitulo);
+// const contato = document.querySelector('.contato');
+// contato.appendChild(cloneTitulo);
 
 // true sinaliza para incluir os filhos
 
@@ -93,9 +92,21 @@ contato.appendChild(cloneTitulo);
  * Exercícios
  */
 // Duplique o menu e adicione ele em copy
+const exMenu = document.querySelector('.menu');
+const exCopy = document.querySelector('.copy');
+const cloneExMenu = exMenu.cloneNode(true);
+exCopy.appendChild(cloneExMenu);
 
 // Selecione o primeiro DT da dl de Faq
+const exFaq = document.querySelector('.faq');
+const exDt = exFaq.querySelector('dt');
+console.log(exDt);
 
 // Selecione o DD referente ao primeiro DT
+const exDD = exDt.nextElementSibling;
+console.log(exDD);
+
 
 // Substitua o conteúdo html de .faq pelo de .animais
+const exAnimais = document.querySelector('.animais');
+exFaq.innerHTML = exAnimais.innerHTML;

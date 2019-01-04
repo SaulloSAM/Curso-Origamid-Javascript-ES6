@@ -1,0 +1,4 @@
+initTabNav();
+initScrollLinks();
+initAnimateScroll();
+initAccordionList();
