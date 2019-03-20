@@ -200,21 +200,19 @@ const transacoes = [
 
   let soma = 0;
 
-    transacoes.forEach(e => {
-        soma += parceInt(e.valor.replace("R$ ", ""));
-    });
-
-  console.log("Soma = " + soma);
+  transacoes.forEach(e => {
+    soma += parseInt(e.valor.replace("R$ ", ""));
+  });
+  console.log(soma);
   
   // Retorne uma array com a lista abaixo
   const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
+  console.log(transportes.split(";"));
   
   // Substitua todos os span's por a's
-  const html = `<ul>
-                  <li><span>Sobre</span></li>
-                  <li><span>Produtos</span></li>
-                  <li><span>Contato</span></li>
-                </ul>`;
+  var html = `<ul> <li><span>Sobre</span></li> <li><span>Produtos</span></li> <li><span>Contato</span></li> </ul>`;
+  html = html.split('span');
+  console.log(html.join('a'));
   
   // Retorne o último caracter da frase
   const frase4 = 'Melhor do ano!';
@@ -222,3 +220,9 @@ const transacoes = [
   
   // Retorne o total de taxas
   const transacoes4 = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
+
+  var count = 0;
+  transacoes4.forEach(e => {
+    if (e.toLowerCase().indexOf("taxa") != -1) { count++; }
+  });
+  console.log(`Total de TAXA = ${count}`);
