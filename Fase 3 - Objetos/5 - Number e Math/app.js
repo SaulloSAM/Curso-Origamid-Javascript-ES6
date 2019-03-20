@@ -119,5 +119,5 @@ console.log(Math.max(4, 5, 20, 8, 9));
 const listaPrecos = ['R$ 59,99', ' R$ 100,222', 'R$ 230  ', 'r$  200'];
 
 listaPrecos.forEach(e => {
-    console.log(Math.round(e.toLowerCase().replace("r$", " ").replace(",", ".").trim()));
+    console.log(Math.round(e.toLowerCase().replace("r$", "").replace(",", ".").trim()));
 });
