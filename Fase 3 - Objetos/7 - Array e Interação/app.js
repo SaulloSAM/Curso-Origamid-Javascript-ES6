@@ -176,3 +176,81 @@ console.log(arrayLimpa);
 const numeros9 = [6, 43, 22, 88, 101, 29];
 const buscaMaior_45 = numeros9.filter(x => x > 45);
 console.log(buscaMaior_45);
+
+const aulas5 = [
+  {
+    nome: 'HTML 1',
+    min: 15
+  },
+  {
+    nome: 'HTML 2',
+    min: 10
+  },
+  {
+    nome: 'CSS 1',
+    min: 20
+  },
+  {
+    nome: 'JS 1',
+    min: 25
+  },
+]
+
+const aulasMaiores = aulas5.filter((aula) => { 
+  return aula.min > 15;
+});
+
+console.log(aulasMaiores);
+
+console.log("EXERCÍCIOS ----------------------------");
+// Selecione cada curso e retorne uma array com objetos contendo o título, descricao, aulas e horas de cada curso.
+const elementosHTML = document.querySelectorAll(".curso");
+const arrayElementosHTML = Array.from(elementosHTML);
+const objHTML = arrayElementosHTML.map(curso => {
+  return {
+    titulo: curso.querySelector("h1").innerText,
+    descricao: curso.querySelector("p").innerText,
+    aulas: curso.querySelector(".aulas").innerText,
+    horas: curso.querySelector(".horas").innerText,
+  }
+});
+console.log(objHTML);
+
+// Retorne uma lista com os números maiores que 100.
+const numeros5 = [3, 44, 333, 23, 122, 322, 33];
+const maiores100 = numeros5.filter(n => (n > 100));
+console.log(maiores100);
+
+// Verifique se Baixo faz parte da lista de instrumentos e retorne true
+const instrumentos = ['Guitarra', 'Baixo', 'Bateria', 'Teclado'];
+console.log(instrumentos.some(i => { return item = "Baixo" }));
+
+
+// Retorne o valor total das compras
+const compras = [
+  {
+    item: 'Banana',
+    preco: 'R$ 4,99'
+  },
+  {
+    item: 'Ovo',
+    preco: 'R$ 2,99'
+  },
+  {
+    item: 'Carne',
+    preco: 'R$ 25,49'
+  },
+  {
+    item: 'Refrigerante',
+    preco: 'R$ 5,35'
+  },
+  {
+    item: 'Quejo',
+    preco: 'R$ 10,60'
+  }
+]
+
+const valorTotal = compras.reduce((acumulador, item) => {
+  return acumulador + +item.preco.replace("R$ ", "").replace(",", ".").trim();
+}, 0);
+console.log(valorTotal);
